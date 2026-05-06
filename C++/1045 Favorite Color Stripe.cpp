@@ -5,16 +5,16 @@ int main(){
     int i,j,k;
     int N;
     cin>>N;
-    int M,favorate[201];
+    int M,favorate[201];//喜欢的颜色顺序
     cin>>M;
     for(i=1;i<=M;i++){
         cin>>favorate[i];
         Rank[favorate[i]]=i;
     }
-    int L,old[10000],long_max=0;
+    int L,old[10000],long_max=0;//队列
     cin>>L;
     for(i=1;i<=L;i++)cin>>old[i];
-    int longest_endwith[201]{0};
+    int longest_endwith[201]{0};//喜欢颜色为尾的最大队列长度
     for(i=1;i<=L;i++){
         if(!Rank[old[i]])continue;
         j=Rank[old[i]];
