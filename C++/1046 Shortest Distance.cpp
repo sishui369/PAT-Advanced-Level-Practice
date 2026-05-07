@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int N,M,S=0;
     cin>>N;
-    int i,j,k,a[N],b[N];
+    int i,j,k,a[100005],b[100005];
     b[0]=0;
     for(i=0;i<N;i++){
         cin>>a[i];
