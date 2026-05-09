@@ -1,6 +1,7 @@
 #include<iostream>
 #include<unordered_map>
 #include<set>
+#include<string>
 using namespace std;
 unordered_map<string,set<string>>MAP[6];
 int main(){
